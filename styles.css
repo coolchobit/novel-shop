@@ -1,0 +1,75 @@
+/* 全局重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 80px;
+}
+
+/* 瀑布流容器 */
+#novelGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* 小说卡片样式 */
+.novel-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 16px;
+  transition: transform 0.2s;
+}
+
+.novel-card:hover {
+  transform: translateY(-5px);
+}
+
+.novel-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.novel-card .chapter {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.novel-card .price {
+  color: #e63946;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.novel-card .buy-btn {
+  width: 100%;
+  background: #0071e3;
+  color: white;
+  border: none;
+  padding: 8px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.novel-card .buy-btn:hover {
+  background: #0077ed;
+}
+
+/* 弹窗动画 */
+#paymentModal {
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
