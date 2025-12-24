@@ -2,7 +2,7 @@
   "name": "novel-shop",
   "version": "1.0.0",
   "dependencies": {
-    "wechatpay-node-v3": "^1.4.7",
+    "wechatpay-node-v3": "latest",
     "qrcode": "^1.5.3"
   },
   "engines": {
