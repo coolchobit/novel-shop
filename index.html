@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小说商城 - 正版TXT下载</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- 搜索栏 -->
+  <header class="fixed top-0 w-full bg-white shadow-md p-4 z-10">
+    <div class="container mx-auto">
+      <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="搜索小说名..." 
+        class="w-full max-w-2xl mx-auto px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+    </div>
+  </header>
+
+  <!-- 瀑布流容器 -->
+  <main class="container mx-auto pt-20 pb-10 px-4" id="novelGrid">
+    <!-- 小说卡片由JS动态生成 -->
+  </main>
+
+  <!-- 付款弹窗 -->
+  <div id="paymentModal" class="fixed inset-0 bg-black/50 hidden flex items-center justify-center z-20">
+    <div class="bg-white rounded-lg w-full max-w-md p-6">
+      <h3 class="text-xl font-bold mb-4" id="modalTitle">付款获取下载链接</h3>
+      <p class="mb-2">价格：<span id="modalPrice"></span></p>
+      <p class="mb-4">扫码付款后，点击下方按钮显示下载链接</p>
+      <img src="qr-code.png" alt="收款码" class="w-full mb-4">
+      <button id="showDownloadBtn" class="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600">
+        已付款，显示下载链接
+      </button>
+      <button id="closeModalBtn" class="w-full mt-2 bg-gray-300 text-gray-800 py-2 rounded-lg hover:bg-gray-400">
+        关闭
+      </button>
+      <!-- 下载链接（默认隐藏） -->
+      <div id="downloadLinkContainer" class="mt-4 hidden">
+        <a id="downloadLink" href="" target="_blank" class="text-blue-500 underline">点击下载TXT文件</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
