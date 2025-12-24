@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "三体全集",
+    "latestChapter": "最终章：死神永生",
+    "price": "5.00元",
+    "downloadUrl": "https://novel-files.r2.cloudflarestorage.com/三体全集.txt"
+  },
+  {
+    "id": 2,
+    "title": "盗墓笔记",
+    "latestChapter": "大结局：十年之约",
+    "price": "4.50元",
+    "downloadUrl": "https://novel-files.r2.cloudflarestorage.com/盗墓笔记.txt"
+  },
+  {
+    "id": 3,
+    "title": "斗破苍穹",
+    "latestChapter": "第1623章：结束，也是开始",
+    "price": "6.00元",
+    "downloadUrl": "https://novel-files.r2.cloudflarestorage.com/斗破苍穹.txt"
+  }
+]
